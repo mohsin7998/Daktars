@@ -1,8 +1,5 @@
 // ✅ Firebase Configuration (REPLACE THIS)
 const firebaseConfig = {
-  apiKey: "AIzaSyAAMUTy2HsagLJIxQ2KrEiXctdOLJQ5QgU",
-  authDomain: "daktars-b77fc.firebaseapp.com",
-  projectId: "daktars-b77fc"
 };
 
 // Initialize Firebase
