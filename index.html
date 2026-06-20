@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="style.css">
+<head>
+  <title>Doctor Appointment Booking</title>
+</head>
+<body>
+
+  <h2>Book Appointment</h2>
+
+  <label>Doctor:</label>
+  <select id="doctor">
+    <option value="D1">Dr. Ahmed</option>
+    <option value="D2">Dr. Sarah</option>
+  </select>
+
+  <br><br>
+
+  <label>Date:</label>
+  <input type="date" id="date">
+
+  <br><br>
+
+  <label>Time:</label>
+  <select id="time">
+    <option value="09:00">09:00</option>
+    <option value="10:00">10:00</option>
+    <option value="11:00">11:00</option>
+  </select>
+
+  <br><br>
+
+  <label>Patient Name:</label>
+  <input type="text" id="name">
+
+  <br><br>
+
+  <button onclick="bookAppointment()">Book</button>
+
+  <h3>Booked Appointments</h3>
+  <ul id="appointmentsList"></ul>
+
+  <!-- ✅ Firebase SDK (Important) -->
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
+
+  <!-- Your Script -->
+  <script src="app.js"></script>
+
+</body>
+</html>
